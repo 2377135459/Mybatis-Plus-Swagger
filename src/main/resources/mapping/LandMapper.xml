@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace=".com.uniin.mybatisPlus.mapper.LandMapper">
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.uniin.mybatisPlus.entity.Land">
+        <id column="land_id" property="landId" />
+        <result column="land_name" property="landName" />
+        <result column="land_password" property="landPassword" />
+    </resultMap>
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        land_id, land_name, land_password
+    </sql>
+
+</mapper>
